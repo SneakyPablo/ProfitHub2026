@@ -1,19 +1,12 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Shop from "./pages/Shop";
-import Dashboard from "./pages/Dashboard";
-import Navbar from "./components/Navbar";
+import React from 'react';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-      </Routes>
-    </Router>
+    <div style={{ textAlign: 'center', marginTop: 100 }}>
+      <h1>🎮 Welcome to ProfitHub</h1>
+      <p>This is your game item marketplace dashboard.</p>
+      <p>Login with Discord and start shopping!</p>
+    </div>
   );
 }
 
